@@ -1,0 +1,48 @@
+$primary-color: #ff0000;
+html,
+body {
+  font-family: Montserrat;
+  min-height: 100%;
+  height: 100%;
+}
+
+.hand{
+  cursor: pointer;
+}
+
+.vert-align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-relative{
+  position: relative;
+}
+
+.rotate-center {
+  transform-origin: center center;
+	-webkit-animation: rotate-center 1s ease-in-out 0.5s infinite both;
+          animation: rotate-center 1s ease-in-out 0.5s infinite both;
+          
+}
+
+ @-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

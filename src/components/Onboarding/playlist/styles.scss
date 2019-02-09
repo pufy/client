@@ -1,0 +1,118 @@
+.rsm-zoomable-group{
+    transition: all .3s cubic-bezier(0, 0, 0.21, 0.66);
+}
+
+.component-map {
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+    padding-bottom: 56.25%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+svg.maps__container path{
+    vector-effect: non-scaling-stroke;
+    stroke-width: 0.2px;
+    transition: all 0.7s ease;
+}
+
+svg.maps__container path:hover {
+    stroke: #ffffff;
+    stroke-width: 0.7px;
+    fill-opacity: 0.82;
+    transition: all 0.5s ease;
+}
+
+svg.maps__container {
+    width: 118%;
+    height: auto;
+    left: -10%;
+    position: relative;
+    transition: all 1.5s ease-in-out;
+    transform: scale(1, 1) translate(0, 0);
+    -webkit-transform: scale(1, 1) translate(0, 0);
+    -moz-transform: scale(1, 1) translate(0, 0);
+    -o-transform: scale(1, 1) translate(0, 0);
+    -ms-transform: scale(1, 1) translate(0, 0);
+}
+
+svg.maps__container__america{
+    transition: all 2.5s ease-in-out;
+    transform: scale(1.02, 1.02) translate(21%, 2%);
+    -webkit-transform: scale(1.02, 1.02) translate(21%, 2%);
+    -moz-transform: scale(1.02, 1.02) translate(21%, 2%);
+    -o-transform: scale(1.02, 1.02) translate(21%, 2%);
+    -ms-transform: scale(1.02, 1.02) translate(21%, 2%);
+}
+
+svg.maps__container__suramerica{
+    transition: all 2.5s ease-in-out;
+    transform: scale(1.9, 1.9) translate(-2%, -47%);
+    -webkit-transform: scale(1.9, 1.9) translate(-2%, -47%);
+    -moz-transform: scale(1.9, 1.9) translate(-2%, -47%);
+    -o-transform: scale(1.9, 1.9) translate(-2%, -47%);
+    -ms-transform: scale(1.9, 1.9) translate(-2%, -47%);
+}
+
+svg.maps__container__norteamerica{
+    transition: all 2.5s ease-in-out;
+    transform: scale(1.9, 1.9) translate(0%, 1%);
+    -webkit-transform: scale(1.9, 1.9) translate(0%, 1%);
+    -moz-transform: scale(1.9, 1.9) translate(0%, 1%);
+    -o-transform: scale(1.9, 1.9) translate(0%, 1%);
+    -ms-transform: scale(1.9, 1.9) translate(0%, 1%);
+}
+
+svg.maps__container__asia{
+    transition: all 2.5s ease-in-out;
+    transform: scale(2.1, 2.1) translate(-48%, -1%);
+    -webkit-transform: scale(2.1, 2.1) translate(-48%, -1%);
+    -moz-transform: scale(2.1, 2.1) translate(-48%, -1%);
+    -o-transform: scale(2.1, 2.1) translate(-48%, -1%);
+    -ms-transform: scale(2.1, 2.1) translate(-48%, -1%);
+}
+
+svg.maps__container__africa{
+    transition: all 2.5s ease-in-out;
+    transform: scale(1.9, 1.9) translate(-25%, -28%);
+    -webkit-transform: scale(1.9, 1.9) translate(-25%, -28%);
+    -moz-transform: scale(1.9, 1.9) translate(-25%, -28%);
+    -o-transform: scale(1.9, 1.9) translate(-25%, -28%);
+    -ms-transform: scale(1.9, 1.9) translate(-25%, -28%);
+}
+
+svg.maps__container__oceania{
+    transition: all 2.5s ease-in-out;
+    transform: scale(2.2, 2.2) translate(-60%, -48%);
+    -webkit-transform: scale(2.2, 2.2) translate(-60%, -48%);
+    -moz-transform: scale(2.2, 2.2) translate(-60%, -48%);
+    -o-transform: scale(2.2, 2.2) translate(-60%, -48%);
+    -ms-transform: scale(2.2, 2.2) translate(-60%, -48%);
+}
+
+svg.maps__container__europa{
+    transition: all 2.5s ease-in-out;
+    transform: scale(3.9, 3.9) translate(-39%, -5%);
+    -webkit-transform: scale(3.9, 3.9) translate(-39%, -5%);
+    -moz-transform: scale(3.9, 3.9) translate(-39%, -5%);
+    -o-transform: scale(3.9, 3.9) translate(-39%, -5%);
+    -ms-transform: scale(3.9, 3.9) translate(-39%, -5%);
+}
+
+svg.maps__container__medioriente{
+    transition: all 2.5s ease-in-out;
+    transform: scale(3.9, 3.9) translate(-49%, -22%);
+    -webkit-transform: scale(3.9, 3.9) translate(-49%, -22%);
+    -moz-transform: scale(3.9, 3.9) translate(-49%, -22%);
+    -o-transform: scale(3.9, 3.9) translate(-49%, -22%);
+    -ms-transform: scale(3.9, 3.9) translate(-49%, -22%);
+}
+
+svg.maps__opacity{
+    fill-opacity: 0.2;
+}
+
+:not(svg), :not(foreignObject) > svg {
+    transform-origin: 0px 0px 0px;
+}

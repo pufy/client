@@ -1,0 +1,71 @@
+.component-dashboard {
+  background: rgb(246, 246, 246);
+  &--content{
+    max-width: 1120px;
+    margin: auto;
+  }
+  &--card{
+    border-radius: 10px;
+    &-content{
+      display: table-cell;
+      vertical-align: bottom;
+      height: 238px;
+      text-align: end;
+      color: #fff;
+      h2, p{
+        width: 80%;
+        margin-left: 15%;
+        padding-right: 3rem;
+      }
+    }
+    &--bkg-ancestry{
+      background-image: url("assets/images/ancestria-card.svg");    
+    }
+    &--bkg-perfomance{
+      background-image: url("assets/images/perfomance-card.svg");    
+    }
+    &--bkg-nutrition{
+      background-image: url("assets/images/nutrition-card.svg");    
+    }
+    &--bkg-ic{
+      background-image: url("assets/images/ic-card.svg");    
+    }
+    &-locked{
+      background: #fff;
+      .component-dashboard--card-content{
+        color: #333;
+        h2, p{
+          width: 80%;
+          margin-left: 15%;
+          padding-right: 3rem;
+        }
+        .fab-content{
+          border-bottom: #333 solid 2px;
+          .fab-continue{
+            color: #fff;
+            background: #333;
+          }  
+        }
+      }
+    }        
+  }
+  .fab-content{
+    position: relative;
+    border-bottom: #fff solid 2px;
+    width: 80%;
+    margin-left: 15%;
+
+  }
+  .fab-continue{
+    position: absolute;
+    background: #fff;
+    color: #333;
+    width: 2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+    top: -1.25rem;
+    right: 0;
+  }
+  @media (max-width: 768px) {
+  }
+}

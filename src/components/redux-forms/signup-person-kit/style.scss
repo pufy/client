@@ -1,0 +1,15 @@
+.signup-person-kit{
+  .field{
+    width: 50%;
+  }
+  .select-gender-responsive{
+    width: 50%!important;
+  }
+
+  @media (max-width: 768px) {
+    .select-gender-responsive{
+      width: 100%!important;
+      padding: 1rem 0 .1rem 0;
+    }
+  }
+}

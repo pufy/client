@@ -1,0 +1,1 @@
+export const SET_ZOOM_CONTINENT = "SET_ZOOM_CONTINENT";

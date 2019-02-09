@@ -1,0 +1,54 @@
+.sub-header {
+  padding-bottom: 3em;
+  max-width: 1120px;
+  margin: auto;
+  padding-left: 25px !important;
+}
+.icon-name {
+  background-color: #dddddd;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+
+  &__acron {
+    color: #666;
+    font-weight: bold;
+    font-size: x-large;
+    align-self: center;
+  }
+
+  &__acron--color-darkred {
+    color: #8f2100;
+  }
+}
+.title{
+    &__greet{
+      color: #04a2a6;
+    }
+    &__name{
+      font-size: 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #666;
+      &--color-darkred{
+        color: #8f2100;
+      }
+    }
+  }
+/*
+  background-image: url(../../../assets/images/background-ancestria.jpg);
+*/
+.header-name {
+  width: 100%;
+  margin: auto;
+  background-image: url("../../../assets/images/background-ancestria.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.header-name-sup{
+  background: -moz-linear-gradient(top, rgba(246,246,246,0.05) 0%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(246,246,246,0.05) 0%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(246,246,246,0.05) 0%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0df6f6f6', endColorstr='#f6f6f6',GradientType=0 );
+}
