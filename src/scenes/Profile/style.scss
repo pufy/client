@@ -1,0 +1,52 @@
+.component-profile{
+  .profile{
+    &-user{
+      text-align: center;
+      img{
+        width: 6rem;
+        margin-bottom: 1rem;
+      }
+      .list-group{
+        text-align: start;
+        margin-top: 1rem;
+        &-item{
+          cursor: pointer;
+          transition: all ease-in .5s;
+          svg{
+            font-size: larger;
+            margin-right: 1rem;
+          }
+          &:hover{
+            background: #c24a4a;
+            color: white;
+          }
+        }
+        .active-tab{
+          background: #c24a4a;
+          color: white;
+        }
+      }
+      .btn-edit{
+        background: #c24a4a;
+        color: white;
+        border: none;
+        margin-top: 1rem;
+        border-radius: 5px;
+        padding: .5rem 1rem;
+        svg{
+          margin-right: .5rem;
+        }
+      }
+    }
+    &-site-info{
+
+    }
+    &-card{
+      background: #FFFFFF;
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      padding: 3rem 5rem;
+      width: 90%;
+    }
+  }
+}

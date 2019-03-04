@@ -4,7 +4,6 @@ import { FaUsers, FaPlusCircle, FaUserAstronaut } from "react-icons/fa";
 import logoPufy from "../../assets/images/logo.svg";
 import { Link } from 'react-router-dom';
 
-
 const Header = props => {
   const { history } = props;
   return (

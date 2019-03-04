@@ -1,0 +1,25 @@
+.component-info-place{
+  .info-place-data{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    img{
+      margin-right: 2rem;
+    }
+    &-info{
+      h3, span{
+        display: inline-block;
+      }
+      span{
+        width:1.5rem;
+        height:1.5rem;
+        margin-left: 1rem;
+        background: red;
+        border-radius: 100%;
+      }
+      h3, p{
+        margin: 0;
+      }
+    }
+  }
+}
