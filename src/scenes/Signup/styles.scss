@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+* a {
+  text-decoration: none;
+  color: #8ea2d5;
+}
+* p {
+  color: #a2a2a2;
+}
+body {
+  background-color: #f3f3f3;
+  margin: 0;
+}
+
+.container-signup {
+  margin-left: 33.33%;
+  margin-right: 33.33%;
+}
+.container-signup header {
+  padding-top: 30px;
+}
+.container-signup header img {
+  display: block;
+  margin: auto;
+}
+.container-signup form{
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+}
+.container-signup section h3 {
+  color: #676767;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.container-signup section form input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 16px;
+  height: 1.3cm;
+  margin-bottom: 0.35cm;
+  padding-left: 20px;
+  width: 100%;
+  background-color: #fff;
+}
+.container-signup section form .rd {
+  margin-top: 25px;
+  display: flex;
+}
+.container-signup section form .rd input[type="radio"] {
+  width: 40px;
+  height: auto;
+  font-size: 70px;
+  vertical-align: middle;
+}
+.container-signup section form .rd label {
+  color: #a2a2a2;
+  font-size: 14px;
+  text-align: justify;
+  margin-right: 21px;
+}
+.container-signup section form p {
+  font-size: 15.5px;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+.container-signup section form p.term {
+  text-align: center;
+}
+.container-signup section form button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  color: #313131;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  height: 1.5cm;
+  margin: auto;
+  width: 90%;
+}
+.container-signup section form button:hover {
+  cursor: pointer;
+} 

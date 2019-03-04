@@ -1,0 +1,130 @@
+.welcome{
+  &-header{
+    color: #666666;
+    text-align: center;
+    font-size: xx-large;
+  }
+  &-card{
+    background: #FFFFFF;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 3rem 5rem;
+  }
+  &-data{
+
+    &-item{
+      margin-bottom: 1rem;
+      h3, label{
+        font-size: larger;
+        color: #666666;
+      }
+      input{
+        max-width: 320px;
+        background: #FFFFFF;
+        border: 1px solid #999999;
+        border-radius: 8px;
+      }
+      input[type="file"]{
+        max-width: 100%;
+      }
+      .list-days{
+        span{
+          cursor: pointer;
+          margin-left: .5rem; 
+          border-radius: 50%; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display: inline-flex;
+          width: 2.5rem;
+          height: 2.5rem;
+          background: #FFFFFF;
+          border: 1px solid #33333324;
+        }
+        .day-active{
+          background: #c24a4a;
+          border: 1px solid #c24a4a;
+          color: #fff;
+        }
+      }
+      .list-color{
+        span{
+          display: inline-block;
+          width: 2rem;
+          height: 2rem;
+          margin-right: .5rem;
+          border-radius: 100%;          
+        }        
+        .selected-color{
+          border: 5px solid #c24a4a;
+        }
+        &-white{
+          background:white;
+          border: 1px solid #33333366;
+        }
+        &-red{
+          background:red;
+        }
+        &-yellow{
+          background:yellow;
+        }
+        &-brown{
+          background:brown;
+        }
+        &-purple{
+          background:purple;
+        }
+        &-gray{
+          background:gray;
+        }
+        &-green{
+          background:green;
+        }
+
+      }
+      .atention-hour{
+        input[type="time"]{
+          background: #FFFFFF;
+          border: 1px solid #999999;
+          border-radius: 8px;
+          padding: .2rem 1rem;
+        }
+      }
+      .category-item{
+        cursor: pointer;
+        display: inline;
+        text-align: center;
+        img{
+          display: block;
+          width: 3em;
+        }
+        label{
+          font-size: smaller;
+        }
+        & + .category-selected{
+          border: 2px dashed #c24a4a;
+        }
+      }
+      .load-images{
+        .list-images{
+
+        }
+      }
+    }
+      .btn-next{
+        background: #c24a4a;
+        border: none;
+        color: #fff;
+        border-radius: 8px;
+        padding: .5rem 1rem;
+        float: right;
+      }
+
+  }  
+}
+.bck-poligon{
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-image: url('../../assets/images/background-poligon.svg') ;
+  height: -webkit-fill-available;
+}

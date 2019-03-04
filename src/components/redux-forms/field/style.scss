@@ -1,5 +1,4 @@
 $color-error: #691A02;
-
 .field {
     display: block;
     text-align: unset;
@@ -18,22 +17,18 @@ $color-error: #691A02;
     .input{
       z-index: 1;
       background-color: #fff;
-      border: 0.5px solid #008E8F;
+      border: none;
       display: inline-flex;
       padding: .3rem;
       padding-left: .7rem;
       margin: .2rem 0;
-      margin-right: -8px;
-      &, select{
-        color: #808080;
-      }
-
+      color: #808080;
       &--error {
         border-color: #e86b6b;
         background: rgba(253, 166, 166, 0.25);
         transform: translate3d(0, 0, 0);
         color: $color-error;
-        &::placeholder, {
+        &::placeholder {
           /* Chrome, Firefox, Opera, Safari 10.1+ */
           color: $color-error !important;
           opacity: 1;
@@ -51,66 +46,23 @@ $color-error: #691A02;
         }        
       }
     }
-    .close-error {
-        position: relative;
-        left: -4px;
-        top: -16px;
-        margin-left: -1px;
-      }
     
     .message-error {
-        background: #CC5636;
-        font-size: small;
-        border-radius: 5px;
-        padding: .3rem 1rem;
-        color: #FFEFEB;
-        display: inline-block;
-        transition: all 2s;
-        -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+     // background: #CC5636;
+      margin-top: -1rem;
+      font-size: small;
+      border-radius: 5px;
+      padding: .3rem 1rem;
+      color: #CC5636;
+      display: block;
+      transition: all 2s;
+      -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     .shake{
         animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
         -webkit-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     
-    }
-    
-    @keyframes shake {
-    
-        10%,
-        90% {
-          transform: translate3d(-1px, 0, 0);
-        }
-    
-        20%,
-        80% {
-          transform: translate3d(2px, 0, 0);
-        }
-    
-        30%,
-        50%,
-        70% {
-          transform: translate3d(-4px, 0, 0);
-        }
-    
-        40%,
-        60% {
-          transform: translate3d(4px, 0, 0);
-        }
-    }
-    
-    @keyframes slide-right {
-        0% {
-          -webkit-transform: translateX(0);
-          transform: translateX(0);
-          opacity: 0;
-        }
-    
-        100% {
-          -webkit-transform: translateX(1em);
-          transform: translateX(.2em);
-          opacity: 1;
-        }
-    }
-}
+    }    
+  }

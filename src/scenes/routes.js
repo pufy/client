@@ -16,46 +16,50 @@ import Event from './Event'
 import Mapa from './Mapa'
 import Catalog from './Catalog'
 import Player from './Player'
-import WelcomeSignup from './WelcomeSignup';
+import Signup from './Signup';
 import Onboarding from './Onboarding';
 import PayModule from '../components/pay-module';
 import Landingpage from './Landingpage';
+import Welcome from './Welcome';
+import Profile from './Profile';
 
 class Routes extends React.Component {
 
-	constructor(props){
+	constructor(props) {
 		super(props);
 		moment.locale('es');
 		this.props.getPermissionsAction();
 	}
-	
+
 	render() {
 		const { auth } = this.props;
-			
-	  	return <Router>
+
+		return <Router>
 			<div>
-				{ auth.rols?
+				{auth.rols ?
 					<Switch className="h-100">
-						<Route exact path="/" component={ Landingpage } />
-						<RouteAuth path="/login"      redirect="/dashboard" component={Login} 		  auth={true}/>
-						<RouteAuth path="/signup"     redirect="/dashboard" component={WelcomeSignup} auth={true}/>
-						<RouteAuth path="/dashboard"  redirect="/login" 	component={Dashboard} 	  auth={true}/>
-						<RouteAuth path="/event"      redirect="/login" 	component={Event} 		  auth={true}/>
-						<RouteAuth path="/catalog"    redirect="/login" 	component={Catalog} 	  auth={true}/>
-						<RouteAuth path="/player"     redirect="/login" 	component={Player} 		  auth={true}/>
-						<RouteAuth path="/map"        redirect="/login" 	component={Mapa}          auth={true}/>
-						<RouteAuth path="/" redirect="/login" 	component={Onboarding} 	  auth={true}/>
+						<Route exact path="/" component={Landingpage} />
+						<RouteAuth path="/login" redirect="/dashboard" component={Login} auth={true} />
+						<RouteAuth path="/signup" redirect="/dashboard" component={Signup} auth={true} />
+						<RouteAuth path="/welcome" redirect="/login" component={Welcome} auth={true} />
+						<RouteAuth path="/dashboard" redirect="/login" component={Dashboard} auth={true} />
+						<RouteAuth path="/event" redirect="/login" component={Event} auth={true} />
+						<RouteAuth path="/catalog" redirect="/login" component={Catalog} auth={true} />
+						<RouteAuth path="/player" redirect="/login" component={Player} auth={true} />
+						<RouteAuth path="/map" redirect="/login" component={Mapa} auth={true} />
+						<RouteAuth path="/profile" redirect="/login" component={Profile} auth={true} />
+						<RouteAuth path="/" redirect="/login" component={Onboarding} auth={true} />
 					</Switch>
 					:
 					<h1>Cargando...</h1>
 				}
 			</div>
-	  	</Router>
+		</Router>
 	}
 
 	requirePermission = (Component, permission) => {
-		if(!this.props.auth.rols.includes('user')){ //No ha registrado kit
-			if(this.props.auth.permissions && this.props.auth.permissions.includes(permission))
+		if (!this.props.auth.rols.includes('user')) { //No ha registrado kit
+			if (this.props.auth.permissions && this.props.auth.permissions.includes(permission))
 				return Component;
 			return Login;
 		}
@@ -71,15 +75,15 @@ const mapDispatchToProps = {
 	getPermissionsAction
 };
 
-function mapStateToProps(state){
-  return {
-    auth: state.auth
-  }
+function mapStateToProps(state) {
+	return {
+		auth: state.auth
+	}
 };
 
 Routes = connect(
-  mapStateToProps,
-  mapDispatchToProps,
+	mapStateToProps,
+	mapDispatchToProps,
 )(Routes);
 
 export default Routes;

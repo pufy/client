@@ -1,0 +1,22 @@
+header{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.09);
+  .container-header{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    .content-logo{   
+      margin-left: 2rem;
+    }
+    .profile-name{
+      margin-right: 2rem;
+      p{
+        margin: 0;
+      }
+      svg{
+        margin-right: 1rem;
+        font-size: larger;
+      }
+    }
+  }
+}
